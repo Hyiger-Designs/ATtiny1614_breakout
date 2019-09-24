@@ -109,14 +109,30 @@ X ~ 2 0 -100 30 U 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# MCU_Microchip_ATtiny_ATtiny1614-SS
+# Switch_SW_Push
 #
-DEF MCU_Microchip_ATtiny_ATtiny1614-SS U 0 20 Y Y 1 F N
+DEF Switch_SW_Push SW 0 40 N N 1 F N
+F0 "SW" 50 100 50 H V L CNN
+F1 "Switch_SW_Push" 0 -60 50 H V C CNN
+F2 "" 0 200 50 H I C CNN
+F3 "" 0 200 50 H I C CNN
+DRAW
+C -80 0 20 0 1 0 N
+C 80 0 20 0 1 0 N
+P 2 0 1 0 0 50 0 120 N
+P 2 0 1 0 100 50 -100 50 N
+X 1 1 -200 0 100 R 50 50 0 1 P
+X 2 2 200 0 100 L 50 50 0 1 P
+ENDDRAW
+ENDDEF
+#
+# attiny1614_breakout-rescue_ATtiny1614-SS-MCU_Microchip_ATtiny
+#
+DEF attiny1614_breakout-rescue_ATtiny1614-SS-MCU_Microchip_ATtiny U 0 20 Y Y 1 F N
 F0 "U" -500 650 50 H V L BNN
-F1 "MCU_Microchip_ATtiny_ATtiny1614-SS" 100 -650 50 H V L TNN
+F1 "attiny1614_breakout-rescue_ATtiny1614-SS-MCU_Microchip_ATtiny" 100 -650 50 H V L TNN
 F2 "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm" 0 0 50 H I C CIN
 F3 "" 0 0 50 H I C CNN
-ALIAS ATtiny404-SS ATtiny804-SS ATtiny1604-SS ATtiny214-SS ATtiny414-SS ATtiny814-SS ATtiny1614-SS
 $FPLIST
  SOIC*3.9x8.7mm*P1.27mm*
 $ENDFPLIST
@@ -139,11 +155,11 @@ X PB0 9 -600 400 100 R 50 50 1 1 T
 ENDDRAW
 ENDDEF
 #
-# Regulator_Linear_REG102-5
+# attiny1614_breakout-rescue_REG102-5-Regulator_Linear
 #
-DEF Regulator_Linear_REG102-5 U 0 10 Y Y 1 F N
+DEF attiny1614_breakout-rescue_REG102-5-Regulator_Linear U 0 10 Y Y 1 F N
 F0 "U" -250 225 50 H V C CNN
-F1 "Regulator_Linear_REG102-5" 0 225 50 H V L CNN
+F1 "attiny1614_breakout-rescue_REG102-5-Regulator_Linear" 0 225 50 H V L CNN
 F2 "Package_TO_SOT_SMD:SOT-23-5" 0 325 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
@@ -156,23 +172,6 @@ X GND 2 0 -300 100 U 50 50 1 1 W
 X ENA 3 -400 0 100 R 50 50 1 1 I
 X NR 4 400 0 100 L 50 50 1 1 I
 X VOUT 5 400 100 100 L 50 50 1 1 w
-ENDDRAW
-ENDDEF
-#
-# Switch_SW_Push
-#
-DEF Switch_SW_Push SW 0 40 N N 1 F N
-F0 "SW" 50 100 50 H V L CNN
-F1 "Switch_SW_Push" 0 -60 50 H V C CNN
-F2 "" 0 200 50 H I C CNN
-F3 "" 0 200 50 H I C CNN
-DRAW
-C -80 0 20 0 1 0 N
-C 80 0 20 0 1 0 N
-P 2 0 1 0 0 50 0 120 N
-P 2 0 1 0 100 50 -100 50 N
-X 1 1 -200 0 100 R 50 50 0 1 P
-X 2 2 200 0 100 L 50 50 0 1 P
 ENDDRAW
 ENDDEF
 #
