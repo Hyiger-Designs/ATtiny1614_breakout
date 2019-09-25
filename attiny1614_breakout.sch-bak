@@ -262,7 +262,7 @@ $EndComp
 Text Label 8800 1900 0    50   ~ 0
 UPDI
 $Comp
-L MCU_Microchip_ATtiny:ATtiny1614-SS U2
+L attiny1614_breakout-rescue:ATtiny1614-SS-MCU_Microchip_ATtiny U2
 U 1 1 5D414195
 P 6200 2300
 F 0 "U2" H 6200 2400 50  0000 C CNN
@@ -449,7 +449,7 @@ F 3 "" H 3000 2450 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Regulator_Linear:REG102-5 U1
+L attiny1614_breakout-rescue:REG102-5-Regulator_Linear U1
 U 1 1 5D749571
 P 3000 2150
 F 0 "U1" H 3000 2492 50  0000 C CNN
